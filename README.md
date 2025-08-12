@@ -29,15 +29,14 @@ This is a real-time object detection and segmentation web application built usin
 ## 📁 Project Structure
 
 YOLOv11_Object_Detection/
-  |
-  ├── app.py # Main Streamlit application
-  ├── requirements.txt # Python dependencies
-  ├── README.md # Project documentation
-  ├── yolov11-models/ # YOLOv11 .pt model files
-  ├── input_samples/ # Test images or videos
+  ─ app.py # Main Streamlit application
+  ─ requirements.txt # Python dependencies
+  ─ README.md # Project documentation
+  ─ yolov11-models/ # YOLOv11 .pt model files
+  ─ input_samples/ # Test images or videos
 
 
----
+---------
 
 ## ⚙️ How to Run
 
