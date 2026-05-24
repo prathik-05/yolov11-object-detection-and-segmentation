@@ -1,79 +1,163 @@
+# 🚀 Real-Time Object Detection & Segmentation using YOLOv11
 
-# 🚀 Real-Time Object Detection using YOLOv11
-
-This is a real-time object detection and segmentation web application built using **YOLOv11**, **OpenCV**, and **Streamlit**. The app supports detection from images, videos, and webcam input, with optional segmentation and object count overlays.
-
----
-
-## 🔧 Features
-
-- 🧠 Object Detection (`yolo11l.pt`) and Segmentation (`yolo11l-seg.pt`)
-- 📸 Supports image, video, and webcam inputs
-- 📊 Live object count overlay on screen
-- 🖼️ Sidebar toggle for segmentation
-- ⚡ Real-time processing with Streamlit interface
+An AI-powered real-time object detection and segmentation platform built using **YOLOv11**, **OpenCV**, and **Streamlit**. The application supports image, video, and webcam-based inference with dynamic switching between detection and segmentation models, live object counting, and interactive visual analytics.
 
 ---
 
-## 🛠 Technologies Used
+# ✨ Features
+
+- 🎯 Real-time Object Detection using `yolo11l.pt`
+- 🧠 Real-time Object Segmentation using `yolo11l-seg.pt`
+- 📸 Supports Image, Video, and Webcam Inputs
+- 📊 Live Object Count Overlay
+- 🔄 Dynamic Detection ↔ Segmentation Switching
+- ⚡ Low-Latency Real-Time Inference
+- 🖥️ Interactive Streamlit User Interface
+- 📈 Class-wise Object Analytics
+- 🎥 Webcam-Based Live Detection Pipeline
+
+---
+
+# 🛠️ Tech Stack
 
 - Python
 - YOLOv11 (Ultralytics)
 - OpenCV
 - Streamlit
 - NumPy
-- PIL (Pillow)
+- Pillow (PIL)
 
 ---
 
-## 📁 Project Structure
+# 🏗️ Project Architecture
 
-YOLOv11_Object_Detection/
-  ─ app.py # Main Streamlit application
-  ─ requirements.txt # Python dependencies
-  ─ README.md # Project documentation
-  ─ yolov11-models/ # YOLOv11 .pt model files
-  ─ input_samples/ # Test images or videos
+```text
+Input Source
+(Image / Video / Webcam)
+            │
+            ▼
+     Streamlit Interface
+            │
+            ▼
+ YOLOv11 Detection / Segmentation
+            │
+            ▼
+   OpenCV Processing Pipeline
+            │
+            ▼
+ Bounding Boxes / Masks / Analytics
+            │
+            ▼
+      Real-Time Visualization
+```
 
+---
 
----------
+# 📂 Project Structure
 
-## ⚙️ How to Run
+```text
+YOLOv11-Object-Detection/
+│
+├── app.py
+├── requirements.txt
+├── README.md
+│
+├── yolov11-models/
+│   ├── yolo11l.pt
+│   └── yolo11l-seg.pt
+│
+├── input_samples/
+│
+└── outputs/
+```
 
-Clone the repository:
+---
+
+# ⚙️ Installation & Setup
+
+## 1️⃣ Clone Repository
 
 ```bash
-git clone https://github.com/prathik-05/yolov11-object-detection
+git clone https://github.com/prathik-05/yolov11-object-detection.git
+
 cd yolov11-object-detection
-
-Install required libraries:
-
-pip install -r requirements.txt
-
-Download and place the following models into the yolov11-models
-
-   --> yolo11l.pt
-
-   --> yolo11l-seg.pt
-
-Then run the app:
-
-streamlit run app-interface.py
-
-
-👤 Author
-
-S. Prathik Reddy
-B.Tech CSE (Data Science), Ace Engineering College
-GitHub: prathik-05
-
-
-📜 License
-
-This project is open-source and free to use for educational and academic purposes.
+```
 
 ---
 
-✅ Copy this and save it as `README.md` in your project folder.
+## 2️⃣ Install Dependencies
 
-Once you upload this to GitHub, your project will look **polished and professional**. Let me know when it’s live so I can move on to update your **resume** and help with **LinkedIn setup
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 3️⃣ Download YOLOv11 Models
+
+Place the following model files inside:
+
+```text
+yolov11-models/
+```
+
+Required Models:
+
+```text
+yolo11l.pt
+yolo11l-seg.pt
+```
+
+---
+
+# ▶️ Run the Application
+
+```bash
+streamlit run app.py
+```
+
+---
+
+# 📸 Supported Inputs
+
+- 🖼️ Images
+- 🎥 Videos
+- 📷 Webcam Stream
+
+---
+
+# 📊 Functionalities
+
+- Real-time object detection
+- Real-time segmentation masks
+- Dynamic model switching
+- Live object counting
+- Class-wise visualization
+- Webcam analytics
+- Video frame processing
+
+---
+
+# 🔮 Future Improvements
+
+- Object Tracking Integration
+- FPS Optimization
+- Multi-camera Support
+- Export Detection Reports
+- Cloud Deployment
+- Advanced Analytics Dashboard
+
+---
+
+# 👨‍💻 Author
+
+## Prathik Salla
+
+- GitHub: https://github.com/prathik-05
+- LinkedIn: https://www.linkedin.com/in/prathik-s07/
+
+---
+
+# 📜 License
+
+This project is open-source and intended for educational, research, and learning purposes.
