@@ -58,7 +58,7 @@ Input Source
 ```text
 YOLOv11-Object-Detection/
 │
-├── app.py
+├── app-inference.py
 ├── requirements.txt
 ├── README.md
 │
@@ -113,7 +113,7 @@ yolo11l-seg.pt
 # ▶️ Run the Application
 
 ```bash
-streamlit run app.py
+streamlit run app-inference.py
 ```
 
 ---
